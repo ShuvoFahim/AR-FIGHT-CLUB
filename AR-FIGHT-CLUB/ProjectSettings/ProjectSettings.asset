@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 00000000000000000000000000000000
+  productGUID: 7c2c71f2004bd504f9f8712b6bc92a46
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -717,7 +717,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: d322fec4-96c1-4eb5-8729-6b6a03e70650
-  projectName: 
+  projectName: AR-FIGHT-CLUB
   organizationId: gamefantasy
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
