@@ -587,7 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 549fa6ac11d02f641aa7db267a97b300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CameraButton: {fileID: 0}
+  CameraButton: {fileID: 1983285485}
 --- !u!4 &581615014
 Transform:
   m_ObjectHideFlags: 0
