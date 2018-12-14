@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 1d0c01bd21ad742eebadb7ead404dfdf
-timeCreated: 1495877883
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     100002: arissa:Body_Geo
@@ -175,14 +173,37 @@ ModelImporter:
     4300006: arissa:Skirt_Geo
     7400000: mixamo.com
     9500000: //RootNode
+    11100000: //RootNode
     13700000: arissa:Body_Geo
     13700002: arissa:Cloak_Geo
     13700004: arissa:Skirt_Geo
     13700006: arissa:Weapons_Geo
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arissa_MAT
+    second: {fileID: 2100000, guid: fb4bdc83379c65c42b48c5e5872ae199, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Arissa_DIFF_diffuse
+    second: {fileID: 2800000, guid: 0b79367374aa2e74c90caca8fa1b91e6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Arissa_NM_normal
+    second: {fileID: 2800000, guid: dfc5f4cd811eb2342bc29c84dad615cf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Arissa_SPEC_specular
+    second: {fileID: 2800000, guid: c36614ee706fb2f489035519427558b1, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -195,12 +216,15 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -208,22 +232,30 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -674,12 +706,12 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: arissa:Skirt_Geo
+    - name: arissa:Weapons_Geo
       parentName: arissa:Meshes
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: arissa:Weapons_Geo
+    - name: arissa:Skirt_Geo
       parentName: arissa:Meshes
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
@@ -834,7 +866,7 @@ ModelImporter:
     - name: arissa:RightHandRing2
       parentName: arissa:RightHandRing1
       position: {x: 0.03864509, y: -0.00198951, z: -0.00014744999}
-      rotation: {x: -0.00016263513, y: -0.002967212, z: -0.0025780592, w: 0.99999225}
+      rotation: {x: -0.00016263513, y: -0.0029672123, z: -0.0025780592, w: 0.9999923}
       scale: {x: 1, y: 1, z: 1}
     - name: arissa:RightHandRing3
       parentName: arissa:RightHandRing2
@@ -881,7 +913,7 @@ ModelImporter:
     - name: arissa:RightHandThumb1
       parentName: arissa:RightHand
       position: {x: 0.025177691, y: -0.00936661, z: 0.025136689}
-      rotation: {x: -0.08670237, y: -0.046237335, z: 0.083277844, w: 0.99167013}
+      rotation: {x: 0.04008803, y: 0.036424924, z: -0.031035343, w: 0.9980496}
       scale: {x: 1, y: 1, z: 1}
     - name: arissa:RightHandThumb2
       parentName: arissa:RightHandThumb1
@@ -985,7 +1017,7 @@ ModelImporter:
     - name: arissa:LeftHandRing2
       parentName: arissa:LeftHandRing1
       position: {x: -0.03864509, y: -0.00198951, z: -0.00014744999}
-      rotation: {x: -0.00016263513, y: 0.002967212, z: 0.0025780592, w: 0.99999225}
+      rotation: {x: -0.00016263513, y: 0.0029672123, z: 0.0025780592, w: 0.9999923}
       scale: {x: 1, y: 1, z: 1}
     - name: arissa:LeftHandRing3
       parentName: arissa:LeftHandRing2
@@ -1031,7 +1063,7 @@ ModelImporter:
     - name: arissa:LeftHandThumb1
       parentName: arissa:LeftHand
       position: {x: -0.025177691, y: -0.00936661, z: 0.025136689}
-      rotation: {x: -0.08670237, y: 0.046237335, z: -0.083277844, w: 0.99167013}
+      rotation: {x: 0.04008803, y: -0.036424924, z: 0.031035343, w: 0.9980496}
       scale: {x: 1, y: 1, z: 1}
     - name: arissa:LeftHandThumb2
       parentName: arissa:LeftHandThumb1
@@ -1082,7 +1114,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: arissa:Hips
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
