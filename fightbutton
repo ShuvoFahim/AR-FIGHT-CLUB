@@ -1,0 +1,39 @@
+using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+
+public class FigureFighting : MonoBehaviour {
+
+    private Transform FightingCameraTransform;
+    private PlayerFightMovement playerFightMovement;
+    public Button FightButton;
+
+
+    
+    void Start () {
+
+        fighttButton = GameObject.FindGameObjectWithTag("FightButton").GetComponent<Button>();
+        fightButton.onClick.AddListener(() => OnFightButtonClick());
+
+        playerFigureMovement = GetComponent<PlayerFigureMovement> ();
+        Transform t = transform;
+        foreach (Transform tr in t)
+        {
+            if (tr.tag == "FightingCamera") 
+            {
+                ShootingCameraTransform = tr.transform;
+            }
+        }
+    }
+
+    
+    void Update () {
+
+    }
+
+    public void OnFightButtonClick()
+    {
+        Debug.Log ("Success");
+
+    }
+}
